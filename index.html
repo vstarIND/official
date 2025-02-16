@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Vedant - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        @keyframes glowing {
+            0% { text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 15px #00eaff; }
+            50% { text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 30px #00eaff; }
+            100% { text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 15px #00eaff; }
+        }
+        header {
+            background: linear-gradient(135deg, #000428, #004e92);
+            padding: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+            border-bottom: 3px solid #00eaff;
+        }
+        .content-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 900px;
+            margin: 50px auto;
+            box-shadow: 0px 4px 15px rgba(0, 238, 255, 0.7);
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #00eaff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            animation: glowing 1.5s infinite alternate;
+            font-size: 20px;
+        }
+        nav ul li a:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background: linear-gradient(45deg, #00eaff, #004e92);
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 238, 255, 0.7);
+            transition: transform 0.2s, box-shadow 0.3s;
+            font-size: 20px;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 20px rgba(0, 238, 255, 1);
+        }
+        footer {
+            background: #000428;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+            border-top: 3px solid #00eaff;
+            font-size: 18px;
+        }
+        .floating-gif {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 120px;
+            height: auto;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="animation: glowing 1.5s infinite alternate; font-size: 36px;">Welcome to Programmer Vedant</h1>
+        <nav>
+            <ul>
+                <li><a href="https://projects.programervedant.com">Projects</a></li>
+                <li><a href="https://rate.programervedant.com">Rate Our Services</a></li>
+                <li><a href="https://support.programervedant.com">Support</a></li>
+                <li><a href="https://news.programervedant.com">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="content-box">
+        <h2 style="animation: glowing 1.5s infinite alternate; font-size: 30px;">Who is Vedant?</h2>
+        <p>Vedant is a skilled programmer and tech enthusiast dedicated to innovation and creativity in web development and digital solutions. His projects aim to simplify technology for everyone.</p>
+        <p>Beyond coding, Vedant explores the endless possibilities of the digital world, continuously pushing boundaries to develop groundbreaking solutions.</p>
+        <h2 style="animation: glowing 1.5s infinite alternate; font-size: 30px;">Join Our Discord</h2>
+        <p>Stay connected with our community and get the latest updates.</p>
+        <a href="https://discord.gg/TsfEyTvkPN" class="btn">Join Now</a>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Programmer Vedant. All rights reserved.</p>
+    </footer>
+
+    <img src="standard_5.gif" alt="Programmer Vedant GIF" class="floating-gif">
+</body>
+</html>
